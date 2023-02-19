@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            preguntas
+        </title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <header id="cabecera">
+            <div id = "logo">
+                <div id = "logoImage">
+                    <a href="index.html">
+                        <img src="ImagenLogo.jpg", width="60rem", height="60rem"/>
+                    </a>                
+                </div>
+                <div id="fuenteLogo">
+                    FullThrottle
+                </div>
+            </div>
+        
+        <nav>
+            <ul>
+                <li class"links">
+                    <a href="index.html"> Página de Inicio</a>
+                </li>
+                <li class"links">
+                    <a href="todoterrenos.html"> Nuestros 4x4</a>
+                </li>
+                <li class"links">
+                    <a href="superdeportivos.html"> Los más veloces</a>
+                </li>
+                <li class"links">
+                    <a href="cochesciudad.html"> De uso diario en la ciudad</a>
+                </li>
+                <li class"links">
+                    <a href="preguntas.html"> ¿Buscando algo personalizado?</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Aqui empieza la pagina-->
+
+    <body>
+        <div class="descripcion">
+            <h1>Indicanos tus preferencias</h1>
+            <h2>Rellena el formulario más abajo y te contactremos lo antes posible</h2>    
+        </div>
+        <form id="formulario">
+            <h2>Formulario sobre distintos aspectos de un coche</h2>
+
+            <label for="utilidad">¿Para qué utilizarás el coche?</label>
+            <select id="utilidad" name="utilidad">
+                <option value="trabajo">Para ir al trabajo</option>
+                <option value="ocio">Para actividades de ocio</option>
+                <option value="familia">Para uso familiar</option>
+                <option value="deportivo">Para uso deportivo</option>
+                <option value="off-road">Para uso off-road</option>
+            </select>
+
+            <label for="rango-precios">Indica el rango de precios que tienes en mente:</label>
+            <div class="precio-container">
+                <div class="precio-box">
+                    <label for="precio-minimo">Precio mínimo:</label>
+                    <input type="number" id="precio-minimo" name="precio-minimo" min="0" step="1000" value="0">
+                </div>
+                <div class="precio-box">
+                    <label for="precio-maximo">Precio máximo:</label>
+                    <input type="number" id="precio-maximo" name="precio-maximo" min="0" step="1000" value="100000">
+                </div>
+            </div>
+
+            <label for="detalles-personales">¿Qué detalles son más importantes para ti en un coche?</label>
+            <textarea id="detalles-personales" name="detalles-personales" rows="5"></textarea>
+
+            <label for="consumo-deseado">¿Qué consumo máximo te gustaría tener?</label>
+            <input type="number" id="consumo-deseado" name="consumo-deseado" min="0" step="0.1"> L/100km
+
+            <label>¿Estás interesado en algún extra?</label>
+            <div class="extras-container">
+                <div>
+                    <input type="checkbox" id="cambio-automatico" name="extras" value="cambio-automatico">
+                    <label for="cambio-automatico">Cambio automático</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="techo-solar" name="extras" value="techo-solar">
+                    <label for="techo-solar">Techo solar</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="asientos-cuero" name="extras" value="asientos-cuero">
+                    <label for="asientos-cuero">Asientos de cuero</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="navegador-gps" name="extras" value="navegador-gps">
+                    <label for="navegador-gps">Navegador GPS</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+
+        
+    </body>
+    <!--Aqui termina la pagina y empieza el cuadro inferior-->
+
+    <footer id ="partecontacto">
+        <div>
+            <div id="Contacto"><h3>Contacto</h3></div>
+            <ul>
+                <li><i class="fa fa-map-marker"></i> <a href="https://goo.gl/maps/M5DcsJKLu4MX45Gg8">C. Alberto Aguilera 23 Madrid-28015</a> </li>
+                <li><i class="fa fa-phone"></i>Teléfono: +34 91 542 28 00</li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:aperaleda@comillas.edu">¡Contactanos por correo!</a></li>               
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.043305208531!2d-3.7149046847417444!3d40.430039979363606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228662ebd8eeb%3A0xd7c09eaa5e0b0c59!2sEscuela%20T%C3%A9cnica%20Superior%20de%20Ingenier%C3%ADa%20(ICAI)!5e0!3m2!1ses!2ses!4v1676655171617!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</html>
